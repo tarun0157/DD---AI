@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Tarun Vashishth - B.Tech 1st Year ECE Student, Maker, and Tech Enthusiast based in Jaipur." />
+  <meta name="author" content="Tarun Vashishth" />
+  <title>Tarun Vashishth | ECE Student & Tech Enthusiast</title>
+  
+  <!-- Google Fonts Preconnect & Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background Animated Mesh / Glow Orbs -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+  <div class="bg-glow bg-glow-3"></div>
+
+  <!-- ==================== HEADER & NAVBAR ==================== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo">
+        <span class="logo__bracket">&lt;</span>
+        <span class="logo__name">Tarun</span>
+        <span class="logo__dot">.</span>
+        <span class="logo__bracket">/&gt;</span>
+      </a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#education" class="nav__link">Education</a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">Skills</a>
+          </li>
+          <li class="nav__item">
+            <a href="#projects" class="nav__link">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a href="#achievements" class="nav__link">Achievements</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Close Button for Mobile Menu -->
+        <button class="nav__close" id="nav-close" aria-label="Close menu">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Header Actions: Theme Switcher & Hamburger Menu -->
+      <div class="header__actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark and light theme" title="Switch Theme">
+          <span class="theme-toggle__icon moon-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+          <span class="theme-toggle__icon sun-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </span>
+        </button>
+
+        <button class="nav__toggle" id="nav-toggle" aria-label="Open menu">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero section" id="home">
+      <div class="hero__container container grid">
+        <div class="hero__content">
+          <div class="hero__badge">
+            <span class="badge__pulse"></span>
+            <span>Welcome to my portfolio</span>
+          </div>
+          
+          <h1 class="hero__title">
+            Hi, I'm <span class="highlight-lime">Tarun Vashishth</span>
+          </h1>
+
+          <div class="hero__subtitle-wrapper">
+            <span class="hero__subtitle-prefix">I am a </span>
+            <span class="hero__typing" id="hero-typing"></span>
+            <span class="hero__cursor">|</span>
+          </div>
+
+          <p class="hero__description">
+            Passionate <strong>1st-Year ECE Student</strong> at JECRC University with a strong interest in C/C++ programming, robotics innovation, and building technology solutions that make an impact.
+          </p>
+
+          <!-- Quick Information Badges -->
+          <div class="hero__tags">
+            <span class="tag-pill">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              Sitapura, Jaipur
+            </span>
+            <span class="tag-pill">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              JECRC University
+            </span>
+            <span class="tag-pill">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              ECE '29
+            </span>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero__buttons">
+            <a href="#contact" class="btn btn-primary">
+              <span>Get In Touch</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            
+            <a href="javascript:void(0)" class="btn btn-secondary" id="resume-btn">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              <span>Download Resume</span>
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="hero__socials">
+            <span class="socials__label">Connect with me:</span>
+            <div class="socials__icons">
+              <a href="https://www.linkedin.com/in/tarun-vashishth-590460431" target="_blank" rel="noopener noreferrer" class="social__link" aria-label="Tarun's LinkedIn Profile" title="LinkedIn Profile">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+              <a href="https://github.com/tarun0157" target="_blank" rel="noopener noreferrer" class="social__link" aria-label="Tarun's GitHub Profile" title="GitHub Profile">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+                </svg>
+              </a>
+              <a href="mailto:tarun.26been0157@jecrcu.edu.in" class="social__link" aria-label="Send Email to Tarun" title="Send Email">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+              <a href="tel:8118837739" class="social__link" aria-label="Call Tarun" title="Call Me">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Profile Card -->
+        <div class="hero__visual">
+          <div class="hero__card-glow"></div>
+          <div class="hero__card">
+            <div class="hero__card-header">
+              <div class="window-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <span class="terminal-title">developer@tarun:~$</span>
+            </div>
+            <div class="hero__avatar-container">
+              <div class="hero__avatar-ring">
+                <div class="hero__avatar-inner">
+                  <img src="images/profile.jpg" alt="Tarun Vashishth - B.Tech ECE Student" class="hero__avatar-img" />
+                </div>
+              </div>
+              <div class="status-indicator" title="Active & Open to Opportunities">
+                <span class="status-dot"></span>
+                <span>Available for Projects</span>
+              </div>
+            </div>
+            
+            <div class="hero__code-snippet">
+              <p><span class="code-keyword">const</span> <span class="code-var">engineer</span> = {</p>
+              <p class="code-indent"><span class="code-prop">name</span>: <span class="code-string">"Tarun Vashishth"</span>,</p>
+              <p class="code-indent"><span class="code-prop">role</span>: <span class="code-string">"ECE Undergrad @ JECRC"</span>,</p>
+              <p class="code-indent"><span class="code-prop">passion</span>: [<span class="code-string">"Robotics"</span>, <span class="code-string">"C++"</span>, <span class="code-string">"Innovation"</span>],</p>
+              <p class="code-indent"><span class="code-prop">hackathon</span>: <span class="code-string">"SIH 2026"</span></p>
+              <p>};</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="hero__scroll-down" aria-label="Scroll to About section">
+        <span>Scroll Down</span>
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </a>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__subtitle">Get to know me</span>
+          <h2 class="section__title">About <span class="highlight-lime">Me</span></h2>
+          <div class="section__line"></div>
+        </div>
+
+        <div class="about__container grid">
+          <div class="about__content">
+            <h3 class="about__heading">
+              Curious Engineer, Maker & Lifelong Learner
+            </h3>
+            <p class="about__text">
+              I am a first-year <strong>Electronics and Communication Engineering (ECE)</strong> student at <strong>JECRC University</strong>, Jaipur. I have a foundational passion for software logic in C/C++, hardware integration, and robotics systems.
+            </p>
+            <p class="about__text">
+              Driven by curiosity, I actively participate in collegiate clubs like <strong>JU Makerspace</strong> and the <strong>Robotics Club</strong>. I thrive in hands-on collaborative environments, solving engineering challenges and building solutions that bridge computing with the physical world.
+            </p>
+
+            <div class="about__info-grid">
+              <div class="info-card">
+                <div class="info-card__icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div>
+                  <span class="info-card__label">Location</span>
+                  <h4 class="info-card__value">Sitapura, Jaipur, RJ</h4>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="info-card__icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                </div>
+                <div>
+                  <span class="info-card__label">Degree</span>
+                  <h4 class="info-card__value">B.Tech ECE (1st Year)</h4>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="info-card__icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </div>
+                <div>
+                  <span class="info-card__label">University</span>
+                  <h4 class="info-card__value">JECRC University</h4>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="info-card__icon">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                </div>
+                <div>
+                  <span class="info-card__label">Interests</span>
+                  <h4 class="info-card__value">Robotics, C++, Tech</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about__cards-column">
+            <div class="feature-box">
+              <div class="feature-box__number">01</div>
+              <div class="feature-box__content">
+                <h4>Hardware & Software Fusion</h4>
+                <p>Exploring the intersection of embedded electronics, microcontrollers, and low-level C/C++ programming.</p>
+              </div>
+            </div>
+
+            <div class="feature-box">
+              <div class="feature-box__number">02</div>
+              <div class="feature-box__content">
+                <h4>Maker Mindset</h4>
+                <p>Prototyping practical ideas at JU Makerspace and participating in innovation challenges like SIH 2026.</p>
+              </div>
+            </div>
+
+            <div class="feature-box">
+              <div class="feature-box__number">03</div>
+              <div class="feature-box__content">
+                <h4>Collaborative Spirit</h4>
+                <p>Dedicated team member with strong leadership values, clear communication, and adaptable problem-solving skills.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION SECTION ==================== -->
+    <section class="education section" id="education">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__subtitle">My Academic Background</span>
+          <h2 class="section__title">Education <span class="highlight-lime">Journey</span></h2>
+          <div class="section__line"></div>
+        </div>
+
+        <div class="timeline">
+          <!-- Timeline Item 1: B.Tech -->
+          <div class="timeline__item">
+            <div class="timeline__marker">
+              <div class="timeline__dot"></div>
+              <div class="timeline__icon">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              </div>
+            </div>
+            <div class="timeline__content card-hover">
+              <div class="timeline__header">
+                <span class="timeline__period">2025 - Present • 1st Year</span>
+                <span class="timeline__badge current-badge">Pursuing</span>
+              </div>
+              <h3 class="timeline__title">Bachelor of Technology (B.Tech) - ECE</h3>
+              <h4 class="timeline__institution">JECRC University, Jaipur</h4>
+              <p class="timeline__desc">
+                Specializing in Electronics and Communication Engineering. Immersed in foundational computing, circuit design principles, electronics labs, and club activities.
+              </p>
+              <div class="timeline__tags">
+                <span class="tag-small">Electronics</span>
+                <span class="tag-small">C/C++ Programming</span>
+                <span class="tag-small">Robotics Club</span>
+                <span class="tag-small">JU Makerspace</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: 12th Senior Secondary -->
+          <div class="timeline__item">
+            <div class="timeline__marker">
+              <div class="timeline__dot"></div>
+              <div class="timeline__icon">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+              </div>
+            </div>
+            <div class="timeline__content card-hover">
+              <div class="timeline__header">
+                <span class="timeline__period">Completed in 2025</span>
+                <span class="timeline__badge score-badge">Score: 81%</span>
+              </div>
+              <h3 class="timeline__title">Higher Secondary Certificate (12th Grade)</h3>
+              <h4 class="timeline__institution">Govt. Senior Secondary School</h4>
+              <p class="timeline__desc">
+                Completed 12th standard with strong performance in Science and Mathematics, laying the mathematical and analytical groundwork for engineering studies.
+              </p>
+              <div class="timeline__tags">
+                <span class="tag-small">Physics</span>
+                <span class="tag-small">Chemistry</span>
+                <span class="tag-small">Mathematics</span>
+                <span class="tag-small">81% Aggregate</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: 10th Secondary -->
+          <div class="timeline__item">
+            <div class="timeline__marker">
+              <div class="timeline__dot"></div>
+              <div class="timeline__icon">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+              </div>
+            </div>
+            <div class="timeline__content card-hover">
+              <div class="timeline__header">
+                <span class="timeline__period">Completed in 2023</span>
+                <span class="timeline__badge score-badge">Score: 85%</span>
+              </div>
+              <h3 class="timeline__title">Secondary School Examination (10th Grade)</h3>
+              <h4 class="timeline__institution">Govt. Senior Secondary School</h4>
+              <p class="timeline__desc">
+                Achieved 85% aggregate with comprehensive grounding in core sciences, analytical mathematics, and extracurricular initiatives.
+              </p>
+              <div class="timeline__tags">
+                <span class="tag-small">Science & Maths</span>
+                <span class="tag-small">Academic Distinction</span>
+                <span class="tag-small">85% Aggregate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__subtitle">My Capabilities</span>
+          <h2 class="section__title">Skills & <span class="highlight-lime">Expertise</span></h2>
+          <div class="section__line"></div>
+        </div>
+
+        <div class="skills__grid grid">
+          <!-- Technical Skills Category -->
+          <div class="skill-category card-hover">
+            <div class="skill-category__header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <div>
+                <h3 class="skill-category__title">Technical Skills</h3>
+                <span class="skill-category__subtitle">Programming & Tools</span>
+              </div>
+            </div>
+
+            <div class="skill-list">
+              <!-- Skill Item: C/C++ -->
+              <div class="skill-item">
+                <div class="skill-item__top">
+                  <div class="skill-item__title-group">
+                    <span class="skill-bullet"></span>
+                    <span class="skill-name">C / C++ Programming</span>
+                  </div>
+                  <span class="skill-level">Core Language</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 85%"></div>
+                </div>
+                <p class="skill-detail">Data structures fundamentals, algorithms, pointer arithmetic, and procedural logic.</p>
+              </div>
+
+              <!-- Skill Item: Git & GitHub -->
+              <div class="skill-item">
+                <div class="skill-item__top">
+                  <div class="skill-item__title-group">
+                    <span class="skill-bullet"></span>
+                    <span class="skill-name">Git & GitHub</span>
+                  </div>
+                  <span class="skill-level">Version Control</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 80%"></div>
+                </div>
+                <p class="skill-detail">Branching, committing, repository management, pull requests, and collaborative coding.</p>
+              </div>
+
+              <!-- Skill Item: Electronics & Hardware Basics -->
+              <div class="skill-item">
+                <div class="skill-item__top">
+                  <div class="skill-item__title-group">
+                    <span class="skill-bullet"></span>
+                    <span class="skill-name">Robotics & Electronics Basics</span>
+                  </div>
+                  <span class="skill-level">Hardware</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 75%"></div>
+                </div>
+                <p class="skill-detail">Circuit fundamentals, microcontrollers, sensor interfacing, and maker prototyping.</p>
+              </div>
+
+              <!-- Skill Item: Problem Solving -->
+              <div class="skill-item">
+                <div class="skill-item__top">
+                  <div class="skill-item__title-group">
+                    <span class="skill-bullet"></span>
+                    <span class="skill-name">Problem Solving & Logic</span>
+                  </div>
+                  <span class="skill-level">Analytical</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 80%"></div>
+                </div>
+                <p class="skill-detail">Algorithmic thinking, debugging logic, and systematic solution development.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Soft Skills Category -->
+          <div class="skill-category card-hover">
+            <div class="skill-category__header">
+              <div class="category-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </div>
+              <div>
+                <h3 class="skill-category__title">Professional & Soft Skills</h3>
+                <span class="skill-category__subtitle">Collaboration & Leadership</span>
+              </div>
+            </div>
+
+            <div class="soft-skills-grid">
+              <!-- Soft Skill 1 -->
+              <div class="soft-card">
+                <div class="soft-card__icon">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                </div>
+                <h4>Teamwork & Synergy</h4>
+                <p>Thriving in multidisciplinary teams during hackathons and engineering club initiatives.</p>
+              </div>
+
+              <!-- Soft Skill 2 -->
+              <div class="soft-card">
+                <div class="soft-card__icon">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                </div>
+                <h4>Leadership & Initiative</h4>
+                <p>Guiding peers, taking ownership of tasks, and actively participating as a core club member.</p>
+              </div>
+
+              <!-- Soft Skill 3 -->
+              <div class="soft-card">
+                <div class="soft-card__icon">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                </div>
+                <h4>Clear Communication</h4>
+                <p>Articulating technical concepts effectively to teammates, mentors, and project audiences.</p>
+              </div>
+
+              <!-- Soft Skill 4 -->
+              <div class="soft-card">
+                <div class="soft-card__icon">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+                </div>
+                <h4>Time Management</h4>
+                <p>Balancing rigorous university coursework with hackathons and hands-on club projects.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__subtitle">My Portfolio of Work</span>
+          <h2 class="section__title">Featured <span class="highlight-lime">Projects</span></h2>
+          <div class="section__line"></div>
+        </div>
+
+        <p class="projects__intro">
+          Below is my project showcase. As I develop new embedded systems, C/C++ applications, and robotics projects throughout my B.Tech degree, they will be documented here!
+        </p>
+
+        <div class="projects__grid grid">
+          
+          <!-- Project 1: C/C++ Data Logic Project -->
+          <div class="project-card card-hover">
+            <div class="project-card__badge">C / C++ Project</div>
+            <div class="project-card__image-placeholder">
+              <div class="placeholder-graphic">
+                <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <span class="placeholder-tag">Algorithms & Logic</span>
+            </div>
+            
+            <div class="project-card__body">
+              <h3 class="project-card__title">C++ Management & Utility System</h3>
+              <p class="project-card__desc">
+                A modular console-based application utilizing object-oriented principles in C++, file handling, and efficient search/sort algorithms for data processing.
+              </p>
+              <div class="project-card__tags">
+                <span>C++</span>
+                <span>OOP</span>
+                <span>File I/O</span>
+                <span>Git</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="https://github.com/tarun0157" target="_blank" rel="noopener noreferrer" class="project-link" title="View Source on GitHub">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  <span>Source Code</span>
+                </a>
+                <a href="#contact" class="project-link project-link--demo" title="Contact for demo">
+                  <span>Details</span>
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Smart India Hackathon Prototype -->
+          <div class="project-card card-hover">
+            <div class="project-card__badge">Hackathon Project</div>
+            <div class="project-card__image-placeholder">
+              <div class="placeholder-graphic">
+                <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <span class="placeholder-tag">SIH 2026 Innovation</span>
+            </div>
+            
+            <div class="project-card__body">
+              <h3 class="project-card__title">SIH 2026 Problem Solver</h3>
+              <p class="project-card__desc">
+                A collaborative innovation built for Smart India Hackathon 2026 addressing real-world problem statements with integrated hardware/software design.
+              </p>
+              <div class="project-card__tags">
+                <span>Hackathon</span>
+                <span>Prototyping</span>
+                <span>Team Collaboration</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="https://github.com/tarun0157" target="_blank" rel="noopener noreferrer" class="project-link" title="View Source on GitHub">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  <span>Source Code</span>
+                </a>
+                <a href="#contact" class="project-link project-link--demo" title="Contact for details">
+                  <span>Details</span>
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Robotics & Maker Space Prototype -->
+          <div class="project-card card-hover">
+            <div class="project-card__badge">Robotics / Embedded</div>
+            <div class="project-card__image-placeholder">
+              <div class="placeholder-graphic">
+                <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+              </div>
+              <span class="placeholder-tag">JU Makerspace / Robotics</span>
+            </div>
+            
+            <div class="project-card__body">
+              <h3 class="project-card__title">Robotics Club Sensor Prototype</h3>
+              <p class="project-card__desc">
+                Hands-on electronics project integrating sensor modules, motor drivers, and automated control mechanisms for robotic maneuvering.
+              </p>
+              <div class="project-card__tags">
+                <span>Microcontrollers</span>
+                <span>Sensors</span>
+                <span>Robotics</span>
+              </div>
+              <div class="project-card__actions">
+                <a href="https://github.com/tarun0157" target="_blank" rel="noopener noreferrer" class="project-link" title="View Source on GitHub">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  <span>Source Code</span>
+                </a>
+                <a href="#contact" class="project-link project-link--demo" title="Contact for details">
+                  <span>Details</span>
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Add Future Project Card (Interactive Template) -->
+          <div class="project-card project-card--add card-hover">
+            <div class="add-card__content">
+              <div class="add-card__icon">
+                <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+              </div>
+              <h3 class="add-card__title">More Projects In Progress</h3>
+              <p class="add-card__desc">
+                Currently exploring new concepts in IoT, embedded systems, and advanced C++ data structures. New projects will be posted soon!
+              </p>
+              <a href="https://github.com/tarun0157" target="_blank" rel="noopener noreferrer" class="btn btn-outline-lime">
+                <span>Follow on GitHub</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ACHIEVEMENTS & CLUBS SECTION ==================== -->
+    <section class="achievements section" id="achievements">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__subtitle">Milestones & Extracurriculars</span>
+          <h2 class="section__title">Achievements & <span class="highlight-lime">Clubs</span></h2>
+          <div class="section__line"></div>
+        </div>
+
+        <div class="achievements__grid grid">
+          
+          <!-- Achievement Card 1: Smart India Hackathon -->
+          <div class="achievement-card card-hover">
+            <div class="achievement-card__icon-wrapper">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            </div>
+            <div class="achievement-card__badge">Hackathon 2026</div>
+            <h3 class="achievement-card__title">Smart India Hackathon 2026</h3>
+            <span class="achievement-card__role">Participant & Innovator</span>
+            <p class="achievement-card__desc">
+              Participated in the prestigious Smart India Hackathon (SIH 2026), collaborating on innovative technology-driven problem solving, teamwork, and high-pressure sprint delivery.
+            </p>
+            <div class="achievement-card__footer">
+              <span class="tag-pill-lime">National Hackathon</span>
+              <span class="tag-pill-lime">Innovation</span>
+            </div>
+          </div>
+
+          <!-- Achievement Card 2: Robotics Club -->
+          <div class="achievement-card card-hover">
+            <div class="achievement-card__icon-wrapper">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"></rect><circle cx="12" cy="5" r="2"></circle><path d="M12 7v4"></path><line x1="8" y1="16" x2="8" y2="16"></line><line x1="16" y1="16" x2="16" y2="16"></line></svg>
+            </div>
+            <div class="achievement-card__badge">Core Member</div>
+            <h3 class="achievement-card__title">Robotics Club</h3>
+            <span class="achievement-card__role">JECRC University</span>
+            <p class="achievement-card__desc">
+              Serving as a core member in the university Robotics Club, contributing to hands-on robot development, bot designs, circuit wiring, and organizing workshops.
+            </p>
+            <div class="achievement-card__footer">
+              <span class="tag-pill-lime">Robotics</span>
+              <span class="tag-pill-lime">Hardware</span>
+            </div>
+          </div>
+
+          <!-- Achievement Card 3: JU Makerspace -->
+          <div class="achievement-card card-hover">
+            <div class="achievement-card__icon-wrapper">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+            </div>
+            <div class="achievement-card__badge">Core Member</div>
+            <h3 class="achievement-card__title">JU Makerspace</h3>
+            <span class="achievement-card__role">Innovation & Tinkering Lab</span>
+            <p class="achievement-card__desc">
+              Active core member at JU Makerspace, engaging in rapid prototyping, creative maker challenges, 3D printing concepts, and multidisciplinary project building.
+            </p>
+            <div class="achievement-card__footer">
+              <span class="tag-pill-lime">Prototyping</span>
+              <span class="tag-pill-lime">Makerspace</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__subtitle">Get in Touch</span>
+          <h2 class="section__title">Contact <span class="highlight-lime">Me</span></h2>
+          <div class="section__line"></div>
+        </div>
+
+        <div class="contact__container grid">
+          <!-- Left Column: Contact Cards -->
+          <div class="contact__info">
+            <h3 class="contact__heading">Let's Discuss & Collaborate</h3>
+            <p class="contact__subheading">
+              Whether you have an interesting project idea, mentorship opportunity, or just want to talk about robotics and tech, feel free to reach out!
+            </p>
+
+            <div class="contact__cards">
+              <!-- Email Card -->
+              <a href="mailto:tarun.26been0157@jecrcu.edu.in" class="contact__card card-hover">
+                <div class="contact__card-icon">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div>
+                  <span class="contact__card-title">Email</span>
+                  <p class="contact__card-data">tarun.26been0157@jecrcu.edu.in</p>
+                </div>
+              </a>
+
+              <!-- Phone Card -->
+              <a href="tel:8118837739" class="contact__card card-hover">
+                <div class="contact__card-icon">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div>
+                  <span class="contact__card-title">Phone / WhatsApp</span>
+                  <p class="contact__card-data">+91 8118837739</p>
+                </div>
+              </a>
+
+              <!-- Location Card -->
+              <div class="contact__card card-hover">
+                <div class="contact__card-icon">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div>
+                  <span class="contact__card-title">Location</span>
+                  <p class="contact__card-data">Sitapura, Jaipur, Rajasthan, India</p>
+                </div>
+              </div>
+
+              <!-- Social Links Row -->
+              <div class="contact__social-row">
+                <a href="https://www.linkedin.com/in/tarun-vashishth-590460431" target="_blank" rel="noopener noreferrer" class="social-pill-btn" title="LinkedIn Profile">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/tarun0157" target="_blank" rel="noopener noreferrer" class="social-pill-btn" title="GitHub Profile">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Form -->
+          <div class="contact__form-wrapper card-hover">
+            <h3 class="form__title">Send a Message</h3>
+            <form class="contact__form" id="contact-form">
+              <div class="form__group">
+                <label for="name" class="form__label">Your Name *</label>
+                <div class="input-wrapper">
+                  <input type="text" id="name" name="name" class="form__input" placeholder="e.g. Rahul Sharma" required />
+                </div>
+              </div>
+
+              <div class="form__group">
+                <label for="email" class="form__label">Your Email *</label>
+                <div class="input-wrapper">
+                  <input type="email" id="email" name="email" class="form__input" placeholder="e.g. rahul@example.com" required />
+                </div>
+              </div>
+
+              <div class="form__group">
+                <label for="subject" class="form__label">Subject</label>
+                <div class="input-wrapper">
+                  <input type="text" id="subject" name="subject" class="form__input" placeholder="e.g. Collaboration on Robotics Project" />
+                </div>
+              </div>
+
+              <div class="form__group">
+                <label for="message" class="form__label">Your Message *</label>
+                <div class="input-wrapper">
+                  <textarea id="message" name="message" rows="4" class="form__input form__textarea" placeholder="Write your message here..." required></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+                <span>Send Message</span>
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+              </button>
+
+              <!-- Status Toast / Feedback inside form -->
+              <div class="form__status" id="form-status"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="footer__container container grid">
+      <div class="footer__brand">
+        <a href="#home" class="footer__logo">
+          <span class="logo__bracket">&lt;</span>
+          <span class="logo__name">Tarun Vashishth</span>
+          <span class="logo__bracket">/&gt;</span>
+        </a>
+        <p class="footer__tagline">
+          B.Tech 1st Year ECE Student @ JECRC University.<br>Building technology with passion and precision.
+        </p>
+      </div>
+
+      <div class="footer__links-group">
+        <h4 class="footer__heading">Quick Links</h4>
+        <ul class="footer__nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__connect">
+        <h4 class="footer__heading">Get Connected</h4>
+        <p class="footer__location">Sitapura, Jaipur, Rajasthan</p>
+        <div class="footer__socials">
+          <a href="https://www.linkedin.com/in/tarun-vashishth-590460431" target="_blank" rel="noopener noreferrer" class="social__link" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="https://github.com/tarun0157" target="_blank" rel="noopener noreferrer" class="social__link" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </a>
+          <a href="mailto:tarun.26been0157@jecrcu.edu.in" class="social__link" aria-label="Email">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom container">
+      <p class="footer__copy">
+        &copy; <span id="year">2026</span> Tarun Vashishth. All rights reserved.
+      </p>
+      <p class="footer__credit">
+        Designed with <span class="highlight-lime">&hearts;</span> for Web & Robotics.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ==================== FLOATING CONTROLS ==================== -->
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top" id="scroll-top" aria-label="Scroll to top" title="Scroll to top">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Resume Preview Modal -->
+  <div class="modal" id="resume-modal">
+    <div class="modal__overlay" id="modal-overlay"></div>
+    <div class="modal__content card-hover">
+      <div class="modal__header">
+        <div class="modal__title-group">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" class="highlight-lime"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+          <h3>Tarun Vashishth - Resume</h3>
+        </div>
+        <button class="modal__close" id="modal-close" aria-label="Close resume modal">&times;</button>
+      </div>
+      
+      <div class="modal__body">
+        <div class="resume-preview">
+          <div class="resume-preview__header">
+            <div class="resume-preview__top">
+              <img src="images/profile.jpg" alt="Tarun Vashishth" class="resume-preview__img" />
+              <div>
+                <h4>TARUN VASHISHTH</h4>
+                <p>B.Tech 1st Year (ECE) | JECRC University, Jaipur</p>
+                <p class="resume-preview__contact">tarun.26been0157@jecrcu.edu.in • +91 8118837739 • Sitapura, Jaipur</p>
+              </div>
+            </div>
+          </div>
+          <hr class="resume-divider" />
+          <div class="resume-preview__section">
+            <h5>EDUCATION</h5>
+            <p><strong>B.Tech in ECE</strong> - JECRC University (1st Year, 2025 - 2029)</p>
+            <p><strong>12th Senior Secondary</strong> - Govt. Sr. Sec. School (81%, 2025)</p>
+            <p><strong>10th Secondary</strong> - Govt. Sr. Sec. School (85%, 2023)</p>
+          </div>
+          <div class="resume-preview__section">
+            <h5>SKILLS</h5>
+            <p><strong>Technical:</strong> C/C++ Programming, Git, GitHub, Electronics Fundamentals</p>
+            <p><strong>Soft Skills:</strong> Teamwork, Leadership, Communication, Problem Solving</p>
+          </div>
+          <div class="resume-preview__section">
+            <h5>ACHIEVEMENTS & CLUBS</h5>
+            <p>• Participated in Smart India Hackathon (SIH 2026)</p>
+            <p>• Core Member - Robotics Club, JECRC University</p>
+            <p>• Core Member - JU Makerspace</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal__footer">
+        <button class="btn btn-secondary" id="modal-cancel">Close</button>
+        <button class="btn btn-primary" id="modal-print" onclick="window.print()">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+          <span>Print / Save as PDF</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
